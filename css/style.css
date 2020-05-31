@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: slategray;
+}
+
+.clock {
+    position: absolute;
+    width: 40vw;
+    height: 40vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: black;
+    cursor: pointer;
+}
+
+.line {
+
+    width: 6px;
+    height: 40%;
+    margin-top: 10%;
+    background-color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 0%;
+    left: 50%;
+    border-radius: 10% 60% 10% 60%;
+    transform: rotate(0deg);
+    transform-origin: 0% 100%;
+    transition: 60s steps(60);
+    cursor: pointer;
+
+}
+
+.clock:hover .line {
+    transform: rotate(360deg);
+}
